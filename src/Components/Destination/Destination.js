@@ -5,6 +5,8 @@ import map from '../../images/Map.png'
 import { useParams } from 'react-router';
 import fakeData from '../fakeData/fakeData.json'
 
+
+
 const Destination = () => {
     const { vehicleType } = useParams();
 

@@ -6,6 +6,7 @@ import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
+
 import { initializeLoginFramework, handleGoogleSignIn, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './LoginForm';
 
 
@@ -86,13 +87,14 @@ const Login = () => {
 
     return (
         <div >
+
             <Navbar></Navbar>
-            <div className='d-flex justify-content-center'>
-                <div className="main-content container">
+            <div style={{ marginTop: " 70px", marginLeft: "600px" }}>
+                <div className="main-content container ">
                     <div id="booking-area" className="booking-form">
                         <h1>Central City Travels</h1>
                         <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
-                        <label htmlFor="newUser">Click on CheckBox To Create An Account</label>
+                        <label htmlFor="newUser"><h4>Click on CheckBox To Create An Account.</h4></label>
                         <form onSubmit={handleSubmit}>
                             {newUser && <h4>Name</h4>}
                             {newUser && <input name="name" type="text" onBlur={handleBlur} placeholder="Your name" />}
@@ -103,7 +105,7 @@ const Login = () => {
                             <label for=""><h4>Password</h4></label>
                             <input type="password" name="password" onBlur={handleBlur} placeholder="Your Password" required />
                             <br />
-                            <input className="btn btn-secondary text-dark" type="submit" value='Sign In' />
+                            <input className="btn btn-secondary text-dark" type="submit" value={newUser ? 'Sign up' : 'Sign in'} />
                         </form>
                         <p style={{ color: 'red' }}>{user.error}</p>
                         {user.success && <p style={{ color: 'green' }}>User {newUser ? 'created' : 'Logged In'} successfully</p>}
