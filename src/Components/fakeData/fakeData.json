@@ -1,0 +1,28 @@
+[{
+    "id": 1,
+    "vehicleType": "Bike",
+    "passengerNumber": 4,
+    "image": "https://i.postimg.cc/WpDc3XYK/Frame.png",
+    "price": 20
+  }, 
+  {
+    "id": 2,
+    "vehicleType": "Car",
+    "passengerNumber": 4,
+    "image": "https://i.postimg.cc/rppYHwvb/Frame-2.png",
+    "price": 30
+  }, 
+  {
+    "id": 3,
+    "vehicleType": "Bus",
+    "passengerNumber": 4,
+    "image": "https://i.postimg.cc/fTj2Tdsp/Frame-1.png",
+    "price": 40
+  }, 
+  {
+    "id": 4,
+    "vehicleType": "Train",
+    "passengerNumber": 4,
+    "image": "https://i.postimg.cc/PqLQZvGt/Group.png",
+    "price": 50
+  }]
