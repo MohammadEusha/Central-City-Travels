@@ -54,13 +54,13 @@ const Destination = () => {
         <div >
             <Navbar></Navbar>
             <div className="container">
-                <div className="main-content container mt-5 row">
-                    <div id="booking-area" className="booking-form col-md-4">
+                <div className=" container mt-5 row">
+                    <div id="booking-area" className="booking-form col-md-8">
                         <h3>Booking Travels</h3>
                         {display}
                         <button style={{ width: '200px', height: '40px' }} className="btn btn-secondary" onClick={() => setBookVehicle(!bookVehicle)}>{buttonText}</button>
                     </div>
-                    <div style={{ height: '500px' }} className="col-md-6">
+                    <div style={{ height: '500px' }} className="col-md-4">
                         <GoogleMap></GoogleMap>
                     </div>
                 </div>
