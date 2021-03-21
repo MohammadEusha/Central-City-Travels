@@ -2,7 +2,6 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../FirebaseConfig/firebase.config';
 
-
 export const initializeLoginFramework = () => {
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
@@ -31,8 +30,6 @@ export const handleGoogleSignIn = () => {
             console.log(err.message);
         })
 }
-
-
 
 export const handleSignOut = () => {
     return firebase.auth().signOut()

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 const VehiclesCard = (props) => {
     const { vehicleType, image } = props.vehicle
@@ -23,7 +25,7 @@ const VehiclesCard = (props) => {
 
                 <div className="card-body ">
                     <h5 className="card-title ">Ride Type : {vehicleType}</h5>
-                    <button style={{ width: '200px' }} onClick={() => handleBook(vehicleType)} className="btn btn-secondary ">Book Your Ride</button>
+                    <button style={{ width: '200px' }} onClick={() => handleBook(vehicleType)} className="btn btn-secondary "> <FontAwesomeIcon icon={faPaperPlane} /> Book Your Ride</button>
                 </div>
             </div>
         </div>

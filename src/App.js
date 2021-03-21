@@ -14,7 +14,6 @@ import NotFound from './Components/NotFound/NotFound';
 
 export const UserContext = createContext()
 
-
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
   return (

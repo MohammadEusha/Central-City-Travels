@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import fakeData from '../fakeData/fakeData.json'
-// import MainPage from '../MainPage/MainPage';
 import Navbar from '../Navbar/Navbar';
 import img from '../../images/Bg.png'
 import VehiclesCard from '../VehiclesCard/VehiclesCard';
-
 
 const Home = () => {
     const [vehicles, setVehicles] = useState([])
