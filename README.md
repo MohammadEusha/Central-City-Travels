@@ -24,7 +24,7 @@ The Website is about Central City Travels . In this site you will at first find 
 
 ### Technology 
 
-• Frontend : HTML , CSS, Bootstrap, JavaScript, React JS.
+• Frontend : CSS, Bootstrap, JavaScript, React JS.
 
 • Deploy Tools : Firebase, Github.
 
